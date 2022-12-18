@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FAF8F1;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="uap.BarangController">
+   <children>
+      <TableView fx:id="viewTabel" layoutX="17.0" layoutY="99.0" prefHeight="231.0" prefWidth="567.0">
+        <columns>
+          <TableColumn fx:id="ColumnBarcode" prefWidth="75.0" text="Barcode" />
+          <TableColumn fx:id="ColumnNama" prefWidth="104.0" text="Nama Produk" />
+            <TableColumn fx:id="ColumnHarga" prefWidth="76.0" text="Harga" />
+            <TableColumn fx:id="ColumnJumlah" prefWidth="73.0" text="Jumlah" />
+            <TableColumn fx:id="ColumnDiskon" prefWidth="73.0" text="Diskon" />
+            <TableColumn fx:id="ColumnExpired" prefWidth="74.0" text="Expired" />
+            <TableColumn fx:id="ColumnKategori" prefWidth="91.0" text="Kategori" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnTambah" layoutX="525.0" layoutY="350.0" mnemonicParsing="false" onAction="#goTambah" text="Tambah" />
+      <Button fx:id="btnKembali" layoutX="17.0" layoutY="350.0" mnemonicParsing="false" onAction="#goKembali" text="Kembali" />
+      <Button fx:id="btnHapus" layoutX="445.0" layoutY="350.0" mnemonicParsing="false" onAction="#goHapus" prefHeight="25.0" prefWidth="59.0" text="Hapus" />
+      <Label layoutX="193.0" layoutY="34.0" text="PRODUK BARANG">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
